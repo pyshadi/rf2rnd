@@ -1,5 +1,5 @@
 from rf2rnd import extract_random_bits
-
+import numpy as np
 def lcg(seed, a, c, m):
     """Linear Congruential Generator."""
     return (a * seed + c) % int(m)
@@ -19,7 +19,7 @@ def randflo(samples, num_numbers=1, low=0., high=1000.):
     ints = bits.astype(int)
 
     # Use the first extracted bit as the initial seed
-    seed = ints[0]
+    seed = np.uint64(ints[0])
 
     # LCG parameters (choose carefully to ensure a long period and good randomness)
     a = 1103515245
@@ -48,7 +48,7 @@ def randint(samples, num_numbers=1, low=0, high=1000):
     ints = bits.astype(int)
 
     # Use the first extracted bit as the initial seed
-    seed = ints[0]
+    seed = np.uint64(ints[0])
 
     # LCG parameters (choose carefully to ensure a long period and good randomness)
     a = 1103515245
