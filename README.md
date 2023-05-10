@@ -96,10 +96,13 @@ The package includes the following files:
 - extractor.py: the module to extract and preprocess the collected data.
 - generator.py: the module to generate a stream of random numbers.
 
+### EXAMPLES 
+The example file 'test_entropy.py' calculates entropy and compares it to numpy. It also generates a plot.
+
 ### Tests
 The package includes the following statistical tests:
+To run the tests use: <code>pytest -s test_monobit.py </code>
 
-- test_entropy.py: calculate entropy and compare to numpy.
 - test_monobit.py: perform a monobit test on the generated random numbers.
 - test_cum_sum.py: perform a cumulative sum test on the generated random numbers.
 - test_rand_excursion.py: perform a random excursion test on the generated random numbers.

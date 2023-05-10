@@ -50,7 +50,7 @@ def test_random_numbers(samples, num_numbers, low, high):
     random_numbers = list(range(low, high+1))
 
     for i in random_numbers:
-        rn = randint(bits, num_numbers, low, i)
+        rn = randint(bits, num_numbers, low, i+1)
         entropy = entropy_test(rn)
         rnd_entropies.append(entropy)
         numpy_numbers = np.random.randint(low, high, size=i, dtype=np.uint64)
