@@ -1,12 +1,12 @@
 # RF2RND: RF Noise to Random Number Generator
-Randomness refers to the lack of predictability or pattern in events or data. Randomness is often desirable in various fields, including computer science, statistics, and cryptography, as it can help ensure fairness, security, and accuracy.
-
+Randomness is often desirable in various fields, including computer science, statistics, and cryptography, because it can help ensure fairness, security, and accuracy.
 Random number generators (RNGs) are software algorithms that produce sequences of random numbers. There are two types of RNGs: true random number generators (TRNGs) and pseudorandom number generators (PRNGs).
 TRNGs use physical processes, such as atmospheric noise or radioactive decay, to generate truly random numbers. These processes are unpredictable, and their outputs are difficult to reproduce, making TRNGs highly secure.
 PRNGs, on the other hand, use mathematical algorithms to generate random numbers. PRNGs are deterministic, meaning that they produce the same sequence of numbers each time they are started with the same seed value. However, PRNGs can produce sequences of numbers that appear to be random, and they are often used in applications where true randomness is not required but a reasonable degree of unpredictability is sufficient.
 
 Atmospheric noise, also known as radio noise or static, is a type of electromagnetic interference that is caused by natural atmospheric phenomena, such as lightning, thunderstorms, and the sun's radiation. It is present in the radio frequency spectrum and can be received by radio receivers (RTL-SDR receiver).
-To sample atmospheric noise using an RTL-SDR receiver, you would need to tune the receiver to a frequency where atmospheric noise is present, which typically falls within the frequency range of 0.5 MHz to 30 MHz.
+To sample atmospheric noise using an RTL-SDR receiver, you would need to tune the receiver to a frequency where atmospheric noise is present, which typically falls within the frequency range of 0.5 MHz to 30 MHz. 
+##### One could also terminate the antenna port to capture more thermal noise from the SDR receiver amplifiers. 
 
 # Usage
 First clone the repository to your machine by running the following command: <br>
