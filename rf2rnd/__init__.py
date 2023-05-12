@@ -1,5 +1,5 @@
 """ rf2rnd package"""
-from .collector import collect_rf_data, collect_hopping_rf_data
+from .collector import collect_rf_data
 from .extractor import extract_random_bits
 from .generator import randint
 from .generator import randflo

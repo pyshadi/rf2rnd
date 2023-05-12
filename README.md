@@ -24,16 +24,6 @@ data = collect_rf_data()
 # Collect RF noise data using custom parameters
  data = collect_rf_data(center_freq=2.4e6, sample_rate=1.2e6, gain=10, num_samples=4096)
 ```
-### collect_hopping_rf_data <br>
-The function enters a loop that collects hop_interval samples at each frequency in the center_freqs list (or the default frequency range if center_freqs is None) and concatenates them into a single array. 
-
-```
-import rf2rnd
-
-samples = rf2rnd.collect_hopping_rf_data(center_freqs=None, sample_rate=2.4e6, gain=20, num_samples=2048, hop_interval=32)
-random_bits = rf2rnd.extract_random_bits(samples)
-print(random_bits)
-```
 
 ## Extracting Random Bits
 To extract random bits from the collected data using one of several available extractor functions, you can use the extract_random_bits function from extractor.py. The available extractor functions are:

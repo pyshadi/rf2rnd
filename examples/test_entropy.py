@@ -1,11 +1,6 @@
 import numpy as np
-import os
-import sys
 import matplotlib.pyplot as plt
 
-# Add the parent directory of both rf2rnd and tests to the sys.path list
-parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.insert(0, parent_dir)
 
 from rf2rnd import collect_rf_data, extract_random_bits, randflo, randint
 

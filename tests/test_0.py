@@ -1,7 +1,6 @@
 import pytest
 
-
-from rf2rnd import collect_rf_data, collect_hopping_rf_data, extract_random_bits, randint, randflo
+from rf2rnd import collect_rf_data, extract_random_bits, randint, randflo
 
 extractors = [
     'von_neumann_extractor',
