@@ -1,5 +1,4 @@
 # RF2RND: RF Noise to Random Number Generator
-Randomness is often desirable in various fields, including computer science, statistics, and cryptography, because it can help ensure fairness, security, and accuracy.
 Random number generators (RNGs) are software algorithms that produce sequences of random numbers. There are two types of RNGs: true random number generators (TRNGs) and pseudorandom number generators (PRNGs).
 TRNGs use physical processes, such as atmospheric noise or radioactive decay, to generate truly random numbers. These processes are unpredictable, and their outputs are difficult to reproduce, making TRNGs highly secure.
 PRNGs, on the other hand, use mathematical algorithms to generate random numbers. PRNGs are deterministic, meaning that they produce the same sequence of numbers each time they are started with the same seed value. However, PRNGs can produce sequences of numbers that appear to be random, and they are often used in applications where true randomness is not required but a reasonable degree of unpredictability is sufficient.
