@@ -1,7 +1,3 @@
-"""Calculates the cumulative sums S using numpy's cumsum function.
-The S array is padded with zeros and used to perform random excursions using a loop over possible states and positions.
-The test statistic V is then calculated as the maximum absolute deviation from zero in the state counters."""
-
 import math
 import numpy as np
 import pytest
