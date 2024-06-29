@@ -1,8 +1,12 @@
 from setuptools import setup, find_packages
+import os
 
-# Read the contents of your requirements.txt file
-with open('requirements.txt') as f:
-    required = f.read().splitlines()
+# Check if requirements.txt exists and read it
+if os.path.exists('requirements.txt'):
+    with open('requirements.txt') as f:
+        required = f.read().splitlines()
+else:
+    required = []
 
 setup(
     name='rf2rnd',
