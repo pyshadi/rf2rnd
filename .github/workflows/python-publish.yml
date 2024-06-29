@@ -1,5 +1,3 @@
-# This workflow uploads a Python package to PyPI
-
 name: Upload Python Package
 
 on:
@@ -14,9 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Set up Python
-      uses: actions/setup-python@v4  # Ensure this is the latest version
+      uses: actions/setup-python@v4.7.0 # Explicitly specify a version that uses Node.js 20
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -27,7 +26,7 @@ jobs:
     - name: Build package
       run: python -m build
     - name: Publish package
-      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+      uses: pypa/gh-action-pypi-publish@v1.5.0 # Ensure the latest version of the PyPI publish action
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
