@@ -99,4 +99,4 @@ To run the tests use: <code>pytest -s test_monobit.py </code>
 
 
 ### License
-...
+MIT
